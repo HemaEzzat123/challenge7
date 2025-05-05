@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template_string, redirect, url_for
+from flask import Flask, request, render_template_string
 import os
 
 app = Flask(__name__)
@@ -29,5 +29,12 @@ def feedback():
 def chocolate_chip():
     return "AzCTF{cookie_crumble}"
 
+# Vercel serverless function entry point
+def handler(request):
+    with app.request_context(request):
+        response = app.full_dispatch_request()
+    return response
+
+# Use this for serverless function compatibility
 if __name__ == '__main__':
     app.run(debug=True)

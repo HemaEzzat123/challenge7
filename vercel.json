@@ -9,15 +9,15 @@
   "routes": [
     {
       "src": "/",
-      "dest": "/app.py"
+      "dest": "app.py"
     },
     {
       "src": "/feedback",
-      "dest": "/app.py"
+      "dest": "app.py"
     },
     {
       "src": "/chocolate_chip",
-      "dest": "/app.py"
+      "dest": "app.py"
     }
   ]
 }
