@@ -1,0 +1,4 @@
+First, the player will try injecting any XSS payloads.
+Then, they will be redirected to a page that contains a hint pointing to the robots.txt file.
+Inside the robots.txt, there will be five pages listed.
+Four of them will be empty, and one will contain the flag.
