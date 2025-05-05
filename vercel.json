@@ -2,22 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "app.py",
+      "src": "api/app.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/",
-      "dest": "app.py"
+      "dest": "api/app.py"
     },
     {
       "src": "/feedback",
-      "dest": "app.py"
+      "dest": "api/app.py"
     },
     {
       "src": "/chocolate_chip",
-      "dest": "app.py"
+      "dest": "api/app.py"
     }
   ]
 }
